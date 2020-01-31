@@ -58,18 +58,10 @@ extension MainInteractor: MainInteractorInterface {
 
 private extension MainInteractor {
     
-    func getUserList(completion: @escaping (Result<[RandomUser], Error>) -> Void) {
-        self.apiClient.fetchUserList(forPage: 0)
-            .sink(
-                receiveCompletion: { result in
-                    switch result {
-                    case .failure(let error):
-                        completion(.failure(error))
-                    default:
-                        break
-                    }
-                    
-                }, receiveValue: { userList in
+    func getUserList(forPage page: UInt = 0, completion: @escaping (Result<[RandomUser], Error>) -> Void) {
+        self.apiClient.fetchUserList(forPage: page)
+            .replaceError(with: UserDefaultsConfig.cachedUsers)
+            .sink(receiveValue: { userList in
                     completion(.success(userList))
                 }
             )
@@ -93,6 +85,9 @@ private extension MainInteractor {
                         email: user.email
                     )
                 }
+                
+                // We could also use NSCache instead of UserDefaults
+                UserDefaultsConfig.cachedUsers = usersModels
                 self?.model = MainViewModel(userList: userList)
             })
         }

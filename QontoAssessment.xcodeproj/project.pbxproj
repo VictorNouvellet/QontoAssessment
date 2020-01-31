@@ -14,6 +14,8 @@
 		576FE94023E47FAF00776032 /* RandomAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93F23E47FAF00776032 /* RandomAPIClient.swift */; };
 		576FE94223E4820200776032 /* RandomAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE94123E4820200776032 /* RandomAPIError.swift */; };
 		576FE94423E48E6500776032 /* RandomAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE94323E48E6500776032 /* RandomAPIResponse.swift */; };
+		576FE94823E497D800776032 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE94723E497D800776032 /* UserDefault.swift */; };
+		576FE94A23E4980000776032 /* UserDefaultsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE94923E4980000776032 /* UserDefaultsConfig.swift */; };
 		57B8290B23E4720B0058163E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8290A23E4720B0058163E /* AppDelegate.swift */; };
 		57B8290D23E4720B0058163E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8290C23E4720B0058163E /* SceneDelegate.swift */; };
 		57B8291423E4720E0058163E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B8291323E4720E0058163E /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		576FE93F23E47FAF00776032 /* RandomAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAPIClient.swift; sourceTree = "<group>"; };
 		576FE94123E4820200776032 /* RandomAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAPIError.swift; sourceTree = "<group>"; };
 		576FE94323E48E6500776032 /* RandomAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAPIResponse.swift; sourceTree = "<group>"; };
+		576FE94723E497D800776032 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		576FE94923E4980000776032 /* UserDefaultsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConfig.swift; sourceTree = "<group>"; };
 		57B8290723E4720B0058163E /* QontoAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QontoAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B8290A23E4720B0058163E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57B8290C23E4720B0058163E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 		57B8293D23E4729E0058163E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				576FE94723E497D800776032 /* UserDefault.swift */,
+				576FE94923E4980000776032 /* UserDefaultsConfig.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -408,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576FE94823E497D800776032 /* UserDefault.swift in Sources */,
 				57B8290B23E4720B0058163E /* AppDelegate.swift in Sources */,
 				57B8290D23E4720B0058163E /* SceneDelegate.swift in Sources */,
 				576FE94423E48E6500776032 /* RandomAPIResponse.swift in Sources */,
@@ -416,6 +423,7 @@
 				57B8295D23E4739D0058163E /* MainBuilder.swift in Sources */,
 				57B8295923E4739D0058163E /* MainViewModel.swift in Sources */,
 				576FE93C23E47F8C00776032 /* RandomUser.swift in Sources */,
+				576FE94A23E4980000776032 /* UserDefaultsConfig.swift in Sources */,
 				576FE93623E47C5600776032 /* UserCell.swift in Sources */,
 				57B8295B23E4739D0058163E /* MainViewController.swift in Sources */,
 				576FE94223E4820200776032 /* RandomAPIError.swift in Sources */,
