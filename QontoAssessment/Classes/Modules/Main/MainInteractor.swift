@@ -7,23 +7,32 @@
 //
 
 import Foundation
+import Combine
+
+enum MainInteractorError: Error {
+    case unexpectedError
+}
 
 protocol MainInteractorInterface {
     var callbackModelUpdate: (_ model: MainViewModel) -> () { get set }
-    func onViewDidAppear()
+    func onViewDidAppear(completion: (() -> Void)?)
     func onViewDidLoad()
+    func onTransfersListManualRefresh(completion: (() -> Void)?)
 }
 
 final class MainInteractor {
-    // MARK: - Injected vars
+    
+    // MARK: Injected vars
     
     weak var view: MainViewController!
+    var apiClient: RandomAPIClient!
     
-    // MARK: - Private vars
+    // MARK: Private vars
     
     private var model = MainViewModel.defaultModel() { didSet { self.onModelUpdate(model) } }
+    private var subscriptions = Set<AnyCancellable>()
     
-    // MARK: - Internal vars
+    // MARK: Internal vars
     
     var callbackModelUpdate: (_ model: MainViewModel) -> () = { _ in }
 }
@@ -31,18 +40,63 @@ final class MainInteractor {
 // MARK: - Internal methods
 
 extension MainInteractor: MainInteractorInterface {
-    func onViewDidAppear() {
-        // Update things on view did appear
-    }
     
     func onViewDidLoad() {
-        // Everything starts here
+        self.model = MainViewModel.defaultModel()
+    }
+    
+    func onViewDidAppear(completion: (() -> Void)?) {
+        self.updateUserList(completion: completion)
+    }
+    
+    func onTransfersListManualRefresh(completion: (() -> Void)?) {
+        self.updateUserList(completion: completion)
     }
 }
 
 // MARK: - Private methods
 
 private extension MainInteractor {
+    
+    func getUserList(completion: @escaping (Result<[RandomUser], Error>) -> Void) {
+        self.apiClient.fetchUserList(forPage: 0)
+            .sink(
+                receiveCompletion: { result in
+                    switch result {
+                    case .failure(let error):
+                        completion(.failure(error))
+                    default:
+                        break
+                    }
+                    
+                }, receiveValue: { userList in
+                    completion(.success(userList))
+                }
+            )
+            .store(in: &subscriptions)
+    }
+    
+    
+    func updateUserList(completion: (() -> Void)? = nil) {
+        self.getUserList { result in
+            DispatchQueue.main.async(execute: { [weak self] in
+                completion?()
+                guard case let .success(usersModels) = result else {
+                    self?.model = MainViewModel.defaultModel()
+                    return
+                }
+                let userList = usersModels.compactMap { user -> UserListMainViewModel? in
+                    return UserListMainViewModel(
+                        id: user.login.uuid,
+                        firstname: user.name.first,
+                        lastname: user.name.last,
+                        email: user.email
+                    )
+                }
+                self?.model = MainViewModel(userList: userList)
+            })
+        }
+    }
     
     // MARK: Model handler
     /// Should not be used directly

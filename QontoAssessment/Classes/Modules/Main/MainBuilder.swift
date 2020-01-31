@@ -19,6 +19,7 @@ final class MainBuilder {
         let view = self.storyboard.instantiateInitialViewController() as? MainViewController
         let interactor = MainInteractor()
         interactor.view = view
+        interactor.apiClient = RandomAPIClient()
         view?.interactor = interactor
         return view
     }

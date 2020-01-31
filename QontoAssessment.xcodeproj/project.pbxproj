@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		576FE93323E47B5000776032 /* UICollectionView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93223E47B5000776032 /* UICollectionView+Dequeue.swift */; };
+		576FE93623E47C5600776032 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93523E47C5600776032 /* UserCell.swift */; };
+		576FE93923E47E3E00776032 /* UserListMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93823E47E3E00776032 /* UserListMainViewModel.swift */; };
+		576FE93C23E47F8C00776032 /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93B23E47F8C00776032 /* RandomUser.swift */; };
+		576FE94023E47FAF00776032 /* RandomAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93F23E47FAF00776032 /* RandomAPIClient.swift */; };
+		576FE94223E4820200776032 /* RandomAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE94123E4820200776032 /* RandomAPIError.swift */; };
+		576FE94423E48E6500776032 /* RandomAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE94323E48E6500776032 /* RandomAPIResponse.swift */; };
 		57B8290B23E4720B0058163E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8290A23E4720B0058163E /* AppDelegate.swift */; };
 		57B8290D23E4720B0058163E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8290C23E4720B0058163E /* SceneDelegate.swift */; };
 		57B8291423E4720E0058163E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B8291323E4720E0058163E /* Assets.xcassets */; };
@@ -40,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		576FE93223E47B5000776032 /* UICollectionView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeue.swift"; sourceTree = "<group>"; };
+		576FE93523E47C5600776032 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		576FE93823E47E3E00776032 /* UserListMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListMainViewModel.swift; sourceTree = "<group>"; };
+		576FE93B23E47F8C00776032 /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
+		576FE93F23E47FAF00776032 /* RandomAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAPIClient.swift; sourceTree = "<group>"; };
+		576FE94123E4820200776032 /* RandomAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAPIError.swift; sourceTree = "<group>"; };
+		576FE94323E48E6500776032 /* RandomAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAPIResponse.swift; sourceTree = "<group>"; };
 		57B8290723E4720B0058163E /* QontoAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QontoAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B8290A23E4720B0058163E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57B8290C23E4720B0058163E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +100,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		576FE93423E47C4D00776032 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				576FE93523E47C5600776032 /* UserCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		576FE93723E47DE900776032 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57B8295423E4739D0058163E /* MainViewModel.swift */,
+				576FE93823E47E3E00776032 /* UserListMainViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		576FE93A23E47F6500776032 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				576FE93E23E47F9900776032 /* RandomAPIClient */,
+				576FE93D23E47F9100776032 /* Models */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		576FE93D23E47F9100776032 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				576FE93B23E47F8C00776032 /* RandomUser.swift */,
+				576FE94323E48E6500776032 /* RandomAPIResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		576FE93E23E47F9900776032 /* RandomAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				576FE93F23E47FAF00776032 /* RandomAPIClient.swift */,
+				576FE94123E4820200776032 /* RandomAPIError.swift */,
+			);
+			path = RandomAPIClient;
+			sourceTree = "<group>";
+		};
 		57B828FE23E4720B0058163E = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				57B8294023E472F10058163E /* App */,
+				576FE93A23E47F6500776032 /* API */,
 				57B8293F23E472B40058163E /* Modules */,
 				57B8293E23E472A70058163E /* Extensions */,
 				57B8293D23E4729E0058163E /* Common */,
@@ -172,6 +231,7 @@
 		57B8293E23E472A70058163E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				576FE93223E47B5000776032 /* UICollectionView+Dequeue.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,7 +266,8 @@
 		57B8295323E4739D0058163E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				57B8295423E4739D0058163E /* MainViewModel.swift */,
+				576FE93723E47DE900776032 /* Models */,
+				576FE93423E47C4D00776032 /* Cells */,
 				57B8295523E4739D0058163E /* Main.storyboard */,
 				57B8295623E4739D0058163E /* MainViewController.swift */,
 				57B8295723E4739D0058163E /* MainInteractor.swift */,
@@ -349,11 +410,18 @@
 			files = (
 				57B8290B23E4720B0058163E /* AppDelegate.swift in Sources */,
 				57B8290D23E4720B0058163E /* SceneDelegate.swift in Sources */,
+				576FE94423E48E6500776032 /* RandomAPIResponse.swift in Sources */,
+				576FE94023E47FAF00776032 /* RandomAPIClient.swift in Sources */,
 				57B8294323E4731E0058163E /* BaseViewController.swift in Sources */,
 				57B8295D23E4739D0058163E /* MainBuilder.swift in Sources */,
 				57B8295923E4739D0058163E /* MainViewModel.swift in Sources */,
+				576FE93C23E47F8C00776032 /* RandomUser.swift in Sources */,
+				576FE93623E47C5600776032 /* UserCell.swift in Sources */,
 				57B8295B23E4739D0058163E /* MainViewController.swift in Sources */,
+				576FE94223E4820200776032 /* RandomAPIError.swift in Sources */,
 				57B8295C23E4739D0058163E /* MainInteractor.swift in Sources */,
+				576FE93923E47E3E00776032 /* UserListMainViewModel.swift in Sources */,
+				576FE93323E47B5000776032 /* UICollectionView+Dequeue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
