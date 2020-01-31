@@ -9,7 +9,7 @@
 import Foundation
 
 struct MainViewModel {
-    let userList: [UserListMainViewModel]?
+    let userList: [UserMainViewModel]?
     
     static func defaultModel() -> MainViewModel {
         return MainViewModel(userList: nil)

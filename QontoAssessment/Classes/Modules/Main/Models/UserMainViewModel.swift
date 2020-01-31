@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct UserListMainViewModel {
+struct UserMainViewModel {
     let id: String
     let firstname: String
     let lastname: String
     let email: String
 }
 
-extension UserListMainViewModel: Hashable {
+extension UserMainViewModel: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }

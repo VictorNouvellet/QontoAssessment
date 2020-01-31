@@ -12,6 +12,7 @@ struct RandomUser: Codable {
     let login: RandomUserLogin
     let name: RandomUserName
     let email: String
+    let picture: RandomUserPicture?
 }
 
 struct RandomUserName: Codable {
@@ -21,4 +22,8 @@ struct RandomUserName: Codable {
 
 struct RandomUserLogin: Codable {
     let uuid: String
+}
+
+struct RandomUserPicture: Codable {
+    let large: String?
 }

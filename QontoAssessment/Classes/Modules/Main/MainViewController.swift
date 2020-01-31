@@ -25,7 +25,7 @@ final class MainViewController: UIViewController {
     
     // MARK: Private vars
     
-    var dataSource: UICollectionViewDiffableDataSource<Section, UserListMainViewModel>!
+    var dataSource: UICollectionViewDiffableDataSource<Section, UserMainViewModel>!
 }
 
 //MARK: - View management methods
@@ -66,7 +66,7 @@ extension MainViewController {
     
     func setupCollectionView() {
         self.collectionView.delegate = self
-        self.dataSource = UICollectionViewDiffableDataSource<Section, UserListMainViewModel>(collectionView: collectionView) { (collectionView, indexPath, model) -> UICollectionViewCell? in
+        self.dataSource = UICollectionViewDiffableDataSource<Section, UserMainViewModel>(collectionView: collectionView) { (collectionView, indexPath, model) -> UICollectionViewCell? in
             let cell: UserCell = collectionView.dequeueReusableCell(for: indexPath)
             cell.configure(withFirstname: model.firstname, lastname: model.lastname, email: model.email)
             return cell
@@ -99,8 +99,8 @@ extension MainViewController {
 
 private extension MainViewController {
     
-    func updateCollectionView(with users: [UserListMainViewModel]?) {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, UserListMainViewModel>()
+    func updateCollectionView(with users: [UserMainViewModel]?) {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, UserMainViewModel>()
         if let users = users {
             snapshot.appendSections([.main])
             snapshot.appendItems(users, toSection: .main)
@@ -115,5 +115,14 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let kHeight = 80
         return CGSize(width: collectionView.bounds.size.width, height: CGFloat(kHeight))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        defer {
+            collectionView.deselectItem(at: indexPath, animated: true)
+        }
+        guard let user = self.dataSource.itemIdentifier(for: indexPath) else { return }
+        guard let transfersListVC = DetailBuilder.getView(user: user) else { return }
+        self.navigationController?.pushViewController(transfersListVC, animated: true)
     }
 }

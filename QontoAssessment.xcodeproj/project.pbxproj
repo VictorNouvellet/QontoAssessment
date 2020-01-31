@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		576FE93323E47B5000776032 /* UICollectionView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93223E47B5000776032 /* UICollectionView+Dequeue.swift */; };
 		576FE93623E47C5600776032 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93523E47C5600776032 /* UserCell.swift */; };
-		576FE93923E47E3E00776032 /* UserListMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93823E47E3E00776032 /* UserListMainViewModel.swift */; };
 		576FE93C23E47F8C00776032 /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93B23E47F8C00776032 /* RandomUser.swift */; };
 		576FE94023E47FAF00776032 /* RandomAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE93F23E47FAF00776032 /* RandomAPIClient.swift */; };
 		576FE94223E4820200776032 /* RandomAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE94123E4820200776032 /* RandomAPIError.swift */; };
 		576FE94423E48E6500776032 /* RandomAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE94323E48E6500776032 /* RandomAPIResponse.swift */; };
 		576FE94823E497D800776032 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE94723E497D800776032 /* UserDefault.swift */; };
 		576FE94A23E4980000776032 /* UserDefaultsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE94923E4980000776032 /* UserDefaultsConfig.swift */; };
+		576FE95423E49E7800776032 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576FE94F23E49E7800776032 /* Detail.storyboard */; };
+		576FE95523E49E7800776032 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE95023E49E7800776032 /* DetailViewModel.swift */; };
+		576FE95623E49E7800776032 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE95123E49E7800776032 /* DetailBuilder.swift */; };
+		576FE95723E49E7800776032 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE95223E49E7800776032 /* DetailViewController.swift */; };
+		576FE95823E49E7800776032 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE95323E49E7800776032 /* DetailInteractor.swift */; };
+		576FE95C23E49FC000776032 /* UserMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE95B23E49FC000776032 /* UserMainViewModel.swift */; };
 		57B8290B23E4720B0058163E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8290A23E4720B0058163E /* AppDelegate.swift */; };
 		57B8290D23E4720B0058163E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8290C23E4720B0058163E /* SceneDelegate.swift */; };
 		57B8291423E4720E0058163E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B8291323E4720E0058163E /* Assets.xcassets */; };
@@ -51,13 +56,18 @@
 /* Begin PBXFileReference section */
 		576FE93223E47B5000776032 /* UICollectionView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeue.swift"; sourceTree = "<group>"; };
 		576FE93523E47C5600776032 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
-		576FE93823E47E3E00776032 /* UserListMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListMainViewModel.swift; sourceTree = "<group>"; };
 		576FE93B23E47F8C00776032 /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
 		576FE93F23E47FAF00776032 /* RandomAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAPIClient.swift; sourceTree = "<group>"; };
 		576FE94123E4820200776032 /* RandomAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAPIError.swift; sourceTree = "<group>"; };
 		576FE94323E48E6500776032 /* RandomAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAPIResponse.swift; sourceTree = "<group>"; };
 		576FE94723E497D800776032 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		576FE94923E4980000776032 /* UserDefaultsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConfig.swift; sourceTree = "<group>"; };
+		576FE94F23E49E7800776032 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		576FE95023E49E7800776032 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		576FE95123E49E7800776032 /* DetailBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
+		576FE95223E49E7800776032 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		576FE95323E49E7800776032 /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		576FE95B23E49FC000776032 /* UserMainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMainViewModel.swift; sourceTree = "<group>"; };
 		57B8290723E4720B0058163E /* QontoAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QontoAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B8290A23E4720B0058163E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57B8290C23E4720B0058163E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,8 +125,8 @@
 		576FE93723E47DE900776032 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				576FE95B23E49FC000776032 /* UserMainViewModel.swift */,
 				57B8295423E4739D0058163E /* MainViewModel.swift */,
-				576FE93823E47E3E00776032 /* UserListMainViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +156,18 @@
 				576FE94123E4820200776032 /* RandomAPIError.swift */,
 			);
 			path = RandomAPIClient;
+			sourceTree = "<group>";
+		};
+		576FE94E23E49E7800776032 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				576FE94F23E49E7800776032 /* Detail.storyboard */,
+				576FE95023E49E7800776032 /* DetailViewModel.swift */,
+				576FE95123E49E7800776032 /* DetailBuilder.swift */,
+				576FE95223E49E7800776032 /* DetailViewController.swift */,
+				576FE95323E49E7800776032 /* DetailInteractor.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		57B828FE23E4720B0058163E = {
@@ -247,6 +269,7 @@
 			children = (
 				57B8294123E473060058163E /* Base */,
 				57B8295323E4739D0058163E /* Main */,
+				576FE94E23E49E7800776032 /* Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -389,6 +412,7 @@
 				57B8295A23E4739D0058163E /* Main.storyboard in Resources */,
 				57B8295F23E475F40058163E /* Base.storyboard in Resources */,
 				57B8291723E4720E0058163E /* LaunchScreen.storyboard in Resources */,
+				576FE95423E49E7800776032 /* Detail.storyboard in Resources */,
 				57B8291423E4720E0058163E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576FE95523E49E7800776032 /* DetailViewModel.swift in Sources */,
 				576FE94823E497D800776032 /* UserDefault.swift in Sources */,
 				57B8290B23E4720B0058163E /* AppDelegate.swift in Sources */,
 				57B8290D23E4720B0058163E /* SceneDelegate.swift in Sources */,
@@ -423,12 +448,15 @@
 				57B8295D23E4739D0058163E /* MainBuilder.swift in Sources */,
 				57B8295923E4739D0058163E /* MainViewModel.swift in Sources */,
 				576FE93C23E47F8C00776032 /* RandomUser.swift in Sources */,
+				576FE95723E49E7800776032 /* DetailViewController.swift in Sources */,
+				576FE95823E49E7800776032 /* DetailInteractor.swift in Sources */,
 				576FE94A23E4980000776032 /* UserDefaultsConfig.swift in Sources */,
 				576FE93623E47C5600776032 /* UserCell.swift in Sources */,
 				57B8295B23E4739D0058163E /* MainViewController.swift in Sources */,
 				576FE94223E4820200776032 /* RandomAPIError.swift in Sources */,
+				576FE95623E49E7800776032 /* DetailBuilder.swift in Sources */,
 				57B8295C23E4739D0058163E /* MainInteractor.swift in Sources */,
-				576FE93923E47E3E00776032 /* UserListMainViewModel.swift in Sources */,
+				576FE95C23E49FC000776032 /* UserMainViewModel.swift in Sources */,
 				576FE93323E47B5000776032 /* UICollectionView+Dequeue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

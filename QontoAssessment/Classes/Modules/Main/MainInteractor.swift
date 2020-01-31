@@ -77,8 +77,8 @@ private extension MainInteractor {
                     self?.model = MainViewModel.defaultModel()
                     return
                 }
-                let userList = usersModels.compactMap { user -> UserListMainViewModel? in
-                    return UserListMainViewModel(
+                let userList = usersModels.compactMap { user -> UserMainViewModel? in
+                    return UserMainViewModel(
                         id: user.login.uuid,
                         firstname: user.name.first,
                         lastname: user.name.last,
