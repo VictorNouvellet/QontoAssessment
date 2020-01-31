@@ -35,6 +35,8 @@ extension MainViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = NSLocalizedString("Users", comment: "")
+        
         self.interactor.callbackModelUpdate = { [weak self] (viewModel) in
             guard let self = self else { return }
             self.updateCollectionView(with: viewModel.userList)
@@ -44,11 +46,6 @@ extension MainViewController {
         self.interactor.onViewDidLoad()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.interactor.onViewDidAppear {
@@ -56,11 +53,6 @@ extension MainViewController {
                 self?.collectionView.refreshControl?.endRefreshing()
             })
         }
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 }
 
@@ -121,7 +113,7 @@ private extension MainViewController {
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let kHeight = 110
+        let kHeight = 80
         return CGSize(width: collectionView.bounds.size.width, height: CGFloat(kHeight))
     }
 }

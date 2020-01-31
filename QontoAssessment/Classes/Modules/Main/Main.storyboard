@@ -27,17 +27,24 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserCell" id="TV6-Ja-S97" customClass="UserCell" customModule="QontoAssessment" customModuleProvider="target">
-                                        <rect key="frame" x="5.5" y="0.0" width="403" height="102"/>
+                                        <rect key="frame" x="5.5" y="0.0" width="403" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vyo-1b-sox">
-                                            <rect key="frame" x="0.0" y="0.0" width="403" height="102"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="403" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="qRW-HV-0a1">
-                                                    <rect key="frame" x="20" y="20" width="363" height="62"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKw-Aj-yHJ">
+                                                    <rect key="frame" x="20" y="89" width="363" height="1"/>
+                                                    <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="lIb-Ev-R0n"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="qRW-HV-0a1">
+                                                    <rect key="frame" x="20" y="20" width="363" height="50"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="XHe-zd-Jda">
-                                                            <rect key="frame" x="0.0" y="0.0" width="201" height="20.5"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XHe-zd-Jda">
+                                                            <rect key="frame" x="0.0" y="0.0" width="156" height="20.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osY-yV-CNA">
                                                                     <rect key="frame" x="0.0" y="0.0" width="76" height="20.5"/>
@@ -46,7 +53,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lastname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URp-dj-Tew">
-                                                                    <rect key="frame" x="126" y="0.0" width="75" height="20.5"/>
+                                                                    <rect key="frame" x="81" y="0.0" width="75" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -54,7 +61,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fff-ws-fju">
-                                                            <rect key="frame" x="0.0" y="41.5" width="41" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="20.5" width="41" height="29.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -63,13 +70,16 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="iKw-Aj-yHJ" firstAttribute="leading" secondItem="vyo-1b-sox" secondAttribute="leading" constant="20" symbolic="YES" id="09W-W6-X8a"/>
                                                 <constraint firstAttribute="bottom" secondItem="qRW-HV-0a1" secondAttribute="bottom" constant="20" id="FNC-RN-N1j"/>
                                                 <constraint firstAttribute="trailing" secondItem="qRW-HV-0a1" secondAttribute="trailing" constant="20" id="HYV-qi-7u5"/>
                                                 <constraint firstItem="qRW-HV-0a1" firstAttribute="top" secondItem="vyo-1b-sox" secondAttribute="top" constant="20" id="OFX-yX-wIt"/>
+                                                <constraint firstAttribute="trailing" secondItem="iKw-Aj-yHJ" secondAttribute="trailing" constant="20" symbolic="YES" id="Unb-Qb-ZXj"/>
+                                                <constraint firstAttribute="bottom" secondItem="iKw-Aj-yHJ" secondAttribute="bottom" id="g1l-AF-nXQ"/>
                                                 <constraint firstItem="qRW-HV-0a1" firstAttribute="leading" secondItem="vyo-1b-sox" secondAttribute="leading" constant="20" id="oxj-PJ-UM3"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="403" height="102"/>
+                                        <size key="customSize" width="403" height="90"/>
                                         <connections>
                                             <outlet property="emailLabel" destination="Fff-ws-fju" id="kPo-SG-Yig"/>
                                             <outlet property="firstnameLabel" destination="osY-yV-CNA" id="iUT-Nk-CPp"/>
