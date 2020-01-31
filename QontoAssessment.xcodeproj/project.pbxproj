@@ -34,6 +34,9 @@
 		57B8295C23E4739D0058163E /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8295723E4739D0058163E /* MainInteractor.swift */; };
 		57B8295D23E4739D0058163E /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8295823E4739D0058163E /* MainBuilder.swift */; };
 		57B8295F23E475F40058163E /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B8295E23E475F40058163E /* Base.storyboard */; };
+		6DCC04AEAD588D11F86FB3A8 /* Pods_QontoAssessment_QontoAssessmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C4F164942687D56B3CD6B9 /* Pods_QontoAssessment_QontoAssessmentUITests.framework */; };
+		B1FD977EA9347903EE6BF167 /* Pods_QontoAssessmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057F8E837669CBB76A931CAF /* Pods_QontoAssessmentTests.framework */; };
+		F40E0417A8D230E73284EE10 /* Pods_QontoAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA118AB9231D8B0D5502299 /* Pods_QontoAssessment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		057F8E837669CBB76A931CAF /* Pods_QontoAssessmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QontoAssessmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA118AB9231D8B0D5502299 /* Pods_QontoAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QontoAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B5F7A2AE8FFDB44715E260 /* Pods-QontoAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoAssessment.debug.xcconfig"; path = "Target Support Files/Pods-QontoAssessment/Pods-QontoAssessment.debug.xcconfig"; sourceTree = "<group>"; };
+		4B37553CBFAEB699883A4AF5 /* Pods-QontoAssessmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoAssessmentTests.debug.xcconfig"; path = "Target Support Files/Pods-QontoAssessmentTests/Pods-QontoAssessmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		576FE93223E47B5000776032 /* UICollectionView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeue.swift"; sourceTree = "<group>"; };
 		576FE93523E47C5600776032 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		576FE93B23E47F8C00776032 /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
@@ -87,6 +94,11 @@
 		57B8295723E4739D0058163E /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		57B8295823E4739D0058163E /* MainBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
 		57B8295E23E475F40058163E /* Base.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
+		5A852903F465E004155146B2 /* Pods-QontoAssessment-QontoAssessmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoAssessment-QontoAssessmentUITests.release.xcconfig"; path = "Target Support Files/Pods-QontoAssessment-QontoAssessmentUITests/Pods-QontoAssessment-QontoAssessmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A0E62B3F06DC50BA40C62FC3 /* Pods-QontoAssessment-QontoAssessmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoAssessment-QontoAssessmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-QontoAssessment-QontoAssessmentUITests/Pods-QontoAssessment-QontoAssessmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2290612FED288D7772E0166 /* Pods-QontoAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoAssessment.release.xcconfig"; path = "Target Support Files/Pods-QontoAssessment/Pods-QontoAssessment.release.xcconfig"; sourceTree = "<group>"; };
+		E01B896C08CB5B86CFBDC519 /* Pods-QontoAssessmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QontoAssessmentTests.release.xcconfig"; path = "Target Support Files/Pods-QontoAssessmentTests/Pods-QontoAssessmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6C4F164942687D56B3CD6B9 /* Pods_QontoAssessment_QontoAssessmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QontoAssessment_QontoAssessmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40E0417A8D230E73284EE10 /* Pods_QontoAssessment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FD977EA9347903EE6BF167 /* Pods_QontoAssessmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +122,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DCC04AEAD588D11F86FB3A8 /* Pods_QontoAssessment_QontoAssessmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E94E3A7F9E10A7DAD778ED3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CA118AB9231D8B0D5502299 /* Pods_QontoAssessment.framework */,
+				E6C4F164942687D56B3CD6B9 /* Pods_QontoAssessment_QontoAssessmentUITests.framework */,
+				057F8E837669CBB76A931CAF /* Pods_QontoAssessmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		576FE93423E47C4D00776032 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +202,8 @@
 				57B8292023E4720E0058163E /* QontoAssessmentTests */,
 				57B8292B23E4720E0058163E /* QontoAssessmentUITests */,
 				57B8290823E4720B0058163E /* Products */,
+				7DE3E9B773839D2F0CE9D945 /* Pods */,
+				2E94E3A7F9E10A7DAD778ED3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -305,6 +332,20 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		7DE3E9B773839D2F0CE9D945 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33B5F7A2AE8FFDB44715E260 /* Pods-QontoAssessment.debug.xcconfig */,
+				B2290612FED288D7772E0166 /* Pods-QontoAssessment.release.xcconfig */,
+				A0E62B3F06DC50BA40C62FC3 /* Pods-QontoAssessment-QontoAssessmentUITests.debug.xcconfig */,
+				5A852903F465E004155146B2 /* Pods-QontoAssessment-QontoAssessmentUITests.release.xcconfig */,
+				4B37553CBFAEB699883A4AF5 /* Pods-QontoAssessmentTests.debug.xcconfig */,
+				E01B896C08CB5B86CFBDC519 /* Pods-QontoAssessmentTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,9 +353,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57B8293123E4720E0058163E /* Build configuration list for PBXNativeTarget "QontoAssessment" */;
 			buildPhases = (
+				89A38F39B649BC767CBC8C36 /* [CP] Check Pods Manifest.lock */,
 				57B8290323E4720B0058163E /* Sources */,
 				57B8290423E4720B0058163E /* Frameworks */,
 				57B8290523E4720B0058163E /* Resources */,
+				D56C74A6873B471E34734FFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,6 +372,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57B8293423E4720E0058163E /* Build configuration list for PBXNativeTarget "QontoAssessmentTests" */;
 			buildPhases = (
+				959901CEC2CCF8E35FC487FF /* [CP] Check Pods Manifest.lock */,
 				57B8291923E4720E0058163E /* Sources */,
 				57B8291A23E4720E0058163E /* Frameworks */,
 				57B8291B23E4720E0058163E /* Resources */,
@@ -347,9 +391,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57B8293723E4720E0058163E /* Build configuration list for PBXNativeTarget "QontoAssessmentUITests" */;
 			buildPhases = (
+				B6EDF6A58F1A3A6A4AC4717F /* [CP] Check Pods Manifest.lock */,
 				57B8292423E4720E0058163E /* Sources */,
 				57B8292523E4720E0058163E /* Frameworks */,
 				57B8292623E4720E0058163E /* Resources */,
+				77FD37A5E01EC1B23CE12CB2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -432,6 +478,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77FD37A5E01EC1B23CE12CB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QontoAssessment-QontoAssessmentUITests/Pods-QontoAssessment-QontoAssessmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QontoAssessment-QontoAssessmentUITests/Pods-QontoAssessment-QontoAssessmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QontoAssessment-QontoAssessmentUITests/Pods-QontoAssessment-QontoAssessmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89A38F39B649BC767CBC8C36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QontoAssessment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959901CEC2CCF8E35FC487FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QontoAssessmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6EDF6A58F1A3A6A4AC4717F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QontoAssessment-QontoAssessmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56C74A6873B471E34734FFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QontoAssessment/Pods-QontoAssessment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QontoAssessment/Pods-QontoAssessment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QontoAssessment/Pods-QontoAssessment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57B8290323E4720B0058163E /* Sources */ = {
@@ -620,6 +769,7 @@
 		};
 		57B8293223E4720E0058163E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33B5F7A2AE8FFDB44715E260 /* Pods-QontoAssessment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -639,6 +789,7 @@
 		};
 		57B8293323E4720E0058163E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2290612FED288D7772E0166 /* Pods-QontoAssessment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -658,6 +809,7 @@
 		};
 		57B8293523E4720E0058163E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B37553CBFAEB699883A4AF5 /* Pods-QontoAssessmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -680,6 +832,7 @@
 		};
 		57B8293623E4720E0058163E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E01B896C08CB5B86CFBDC519 /* Pods-QontoAssessmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -702,6 +855,7 @@
 		};
 		57B8293823E4720E0058163E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E62B3F06DC50BA40C62FC3 /* Pods-QontoAssessment-QontoAssessmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -722,6 +876,7 @@
 		};
 		57B8293923E4720E0058163E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A852903F465E004155146B2 /* Pods-QontoAssessment-QontoAssessmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
