@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57B8290B23E4720B0058163E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8290A23E4720B0058163E /* AppDelegate.swift */; };
+		57B8290D23E4720B0058163E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8290C23E4720B0058163E /* SceneDelegate.swift */; };
+		57B8291423E4720E0058163E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B8291323E4720E0058163E /* Assets.xcassets */; };
+		57B8291723E4720E0058163E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B8291523E4720E0058163E /* LaunchScreen.storyboard */; };
+		57B8292223E4720E0058163E /* QontoAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8292123E4720E0058163E /* QontoAssessmentTests.swift */; };
+		57B8292D23E4720E0058163E /* QontoAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8292C23E4720E0058163E /* QontoAssessmentUITests.swift */; };
+		57B8294323E4731E0058163E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8294223E4731E0058163E /* BaseViewController.swift */; };
+		57B8295923E4739D0058163E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8295423E4739D0058163E /* MainViewModel.swift */; };
+		57B8295A23E4739D0058163E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B8295523E4739D0058163E /* Main.storyboard */; };
+		57B8295B23E4739D0058163E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8295623E4739D0058163E /* MainViewController.swift */; };
+		57B8295C23E4739D0058163E /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8295723E4739D0058163E /* MainInteractor.swift */; };
+		57B8295D23E4739D0058163E /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8295823E4739D0058163E /* MainBuilder.swift */; };
+		57B8295F23E475F40058163E /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B8295E23E475F40058163E /* Base.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57B8291E23E4720E0058163E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57B828FF23E4720B0058163E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57B8290623E4720B0058163E;
+			remoteInfo = QontoAssessment;
+		};
+		57B8292923E4720E0058163E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57B828FF23E4720B0058163E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57B8290623E4720B0058163E;
+			remoteInfo = QontoAssessment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57B8290723E4720B0058163E /* QontoAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QontoAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57B8290A23E4720B0058163E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57B8290C23E4720B0058163E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		57B8291323E4720E0058163E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57B8291623E4720E0058163E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57B8291823E4720E0058163E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B8291D23E4720E0058163E /* QontoAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QontoAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57B8292123E4720E0058163E /* QontoAssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QontoAssessmentTests.swift; sourceTree = "<group>"; };
+		57B8292323E4720E0058163E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B8292823E4720E0058163E /* QontoAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QontoAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57B8292C23E4720E0058163E /* QontoAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QontoAssessmentUITests.swift; sourceTree = "<group>"; };
+		57B8292E23E4720E0058163E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B8294223E4731E0058163E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		57B8295423E4739D0058163E /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		57B8295523E4739D0058163E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		57B8295623E4739D0058163E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		57B8295723E4739D0058163E /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		57B8295823E4739D0058163E /* MainBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		57B8295E23E475F40058163E /* Base.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57B8290423E4720B0058163E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57B8291A23E4720E0058163E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57B8292523E4720E0058163E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57B828FE23E4720B0058163E = {
+			isa = PBXGroup;
+			children = (
+				57B8290923E4720B0058163E /* QontoAssessment */,
+				57B8292023E4720E0058163E /* QontoAssessmentTests */,
+				57B8292B23E4720E0058163E /* QontoAssessmentUITests */,
+				57B8290823E4720B0058163E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57B8290823E4720B0058163E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57B8290723E4720B0058163E /* QontoAssessment.app */,
+				57B8291D23E4720E0058163E /* QontoAssessmentTests.xctest */,
+				57B8292823E4720E0058163E /* QontoAssessmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57B8290923E4720B0058163E /* QontoAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				57B8293A23E4724C0058163E /* Classes */,
+				57B8293B23E472570058163E /* Resources */,
+				57B8293C23E4726F0058163E /* SupportingFiles */,
+			);
+			path = QontoAssessment;
+			sourceTree = "<group>";
+		};
+		57B8292023E4720E0058163E /* QontoAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				57B8292123E4720E0058163E /* QontoAssessmentTests.swift */,
+				57B8292323E4720E0058163E /* Info.plist */,
+			);
+			path = QontoAssessmentTests;
+			sourceTree = "<group>";
+		};
+		57B8292B23E4720E0058163E /* QontoAssessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57B8292C23E4720E0058163E /* QontoAssessmentUITests.swift */,
+				57B8292E23E4720E0058163E /* Info.plist */,
+			);
+			path = QontoAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		57B8293A23E4724C0058163E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				57B8294023E472F10058163E /* App */,
+				57B8293F23E472B40058163E /* Modules */,
+				57B8293E23E472A70058163E /* Extensions */,
+				57B8293D23E4729E0058163E /* Common */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		57B8293B23E472570058163E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57B8291323E4720E0058163E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57B8293C23E4726F0058163E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				57B8291823E4720E0058163E /* Info.plist */,
+				57B8291523E4720E0058163E /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		57B8293D23E4729E0058163E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		57B8293E23E472A70058163E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		57B8293F23E472B40058163E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				57B8294123E473060058163E /* Base */,
+				57B8295323E4739D0058163E /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		57B8294023E472F10058163E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				57B8290A23E4720B0058163E /* AppDelegate.swift */,
+				57B8290C23E4720B0058163E /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		57B8294123E473060058163E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				57B8294223E4731E0058163E /* BaseViewController.swift */,
+				57B8295E23E475F40058163E /* Base.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		57B8295323E4739D0058163E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				57B8295423E4739D0058163E /* MainViewModel.swift */,
+				57B8295523E4739D0058163E /* Main.storyboard */,
+				57B8295623E4739D0058163E /* MainViewController.swift */,
+				57B8295723E4739D0058163E /* MainInteractor.swift */,
+				57B8295823E4739D0058163E /* MainBuilder.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57B8290623E4720B0058163E /* QontoAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57B8293123E4720E0058163E /* Build configuration list for PBXNativeTarget "QontoAssessment" */;
+			buildPhases = (
+				57B8290323E4720B0058163E /* Sources */,
+				57B8290423E4720B0058163E /* Frameworks */,
+				57B8290523E4720B0058163E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QontoAssessment;
+			productName = QontoAssessment;
+			productReference = 57B8290723E4720B0058163E /* QontoAssessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57B8291C23E4720E0058163E /* QontoAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57B8293423E4720E0058163E /* Build configuration list for PBXNativeTarget "QontoAssessmentTests" */;
+			buildPhases = (
+				57B8291923E4720E0058163E /* Sources */,
+				57B8291A23E4720E0058163E /* Frameworks */,
+				57B8291B23E4720E0058163E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57B8291F23E4720E0058163E /* PBXTargetDependency */,
+			);
+			name = QontoAssessmentTests;
+			productName = QontoAssessmentTests;
+			productReference = 57B8291D23E4720E0058163E /* QontoAssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57B8292723E4720E0058163E /* QontoAssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57B8293723E4720E0058163E /* Build configuration list for PBXNativeTarget "QontoAssessmentUITests" */;
+			buildPhases = (
+				57B8292423E4720E0058163E /* Sources */,
+				57B8292523E4720E0058163E /* Frameworks */,
+				57B8292623E4720E0058163E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57B8292A23E4720E0058163E /* PBXTargetDependency */,
+			);
+			name = QontoAssessmentUITests;
+			productName = QontoAssessmentUITests;
+			productReference = 57B8292823E4720E0058163E /* QontoAssessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57B828FF23E4720B0058163E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Victor Nouvellet";
+				TargetAttributes = {
+					57B8290623E4720B0058163E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					57B8291C23E4720E0058163E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 57B8290623E4720B0058163E;
+					};
+					57B8292723E4720E0058163E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 57B8290623E4720B0058163E;
+					};
+				};
+			};
+			buildConfigurationList = 57B8290223E4720B0058163E /* Build configuration list for PBXProject "QontoAssessment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57B828FE23E4720B0058163E;
+			productRefGroup = 57B8290823E4720B0058163E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57B8290623E4720B0058163E /* QontoAssessment */,
+				57B8291C23E4720E0058163E /* QontoAssessmentTests */,
+				57B8292723E4720E0058163E /* QontoAssessmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57B8290523E4720B0058163E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57B8295A23E4739D0058163E /* Main.storyboard in Resources */,
+				57B8295F23E475F40058163E /* Base.storyboard in Resources */,
+				57B8291723E4720E0058163E /* LaunchScreen.storyboard in Resources */,
+				57B8291423E4720E0058163E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57B8291B23E4720E0058163E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57B8292623E4720E0058163E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57B8290323E4720B0058163E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57B8290B23E4720B0058163E /* AppDelegate.swift in Sources */,
+				57B8290D23E4720B0058163E /* SceneDelegate.swift in Sources */,
+				57B8294323E4731E0058163E /* BaseViewController.swift in Sources */,
+				57B8295D23E4739D0058163E /* MainBuilder.swift in Sources */,
+				57B8295923E4739D0058163E /* MainViewModel.swift in Sources */,
+				57B8295B23E4739D0058163E /* MainViewController.swift in Sources */,
+				57B8295C23E4739D0058163E /* MainInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57B8291923E4720E0058163E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57B8292223E4720E0058163E /* QontoAssessmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57B8292423E4720E0058163E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57B8292D23E4720E0058163E /* QontoAssessmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57B8291F23E4720E0058163E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57B8290623E4720B0058163E /* QontoAssessment */;
+			targetProxy = 57B8291E23E4720E0058163E /* PBXContainerItemProxy */;
+		};
+		57B8292A23E4720E0058163E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57B8290623E4720B0058163E /* QontoAssessment */;
+			targetProxy = 57B8292923E4720E0058163E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57B8291523E4720E0058163E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57B8291623E4720E0058163E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57B8292F23E4720E0058163E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57B8293023E4720E0058163E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57B8293223E4720E0058163E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDDJKS56T5;
+				INFOPLIST_FILE = QontoAssessment/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nouvellet.victor.QontoAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57B8293323E4720E0058163E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDDJKS56T5;
+				INFOPLIST_FILE = QontoAssessment/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nouvellet.victor.QontoAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57B8293523E4720E0058163E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDDJKS56T5;
+				INFOPLIST_FILE = QontoAssessmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nouvellet.victor.QontoAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QontoAssessment.app/QontoAssessment";
+			};
+			name = Debug;
+		};
+		57B8293623E4720E0058163E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDDJKS56T5;
+				INFOPLIST_FILE = QontoAssessmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nouvellet.victor.QontoAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QontoAssessment.app/QontoAssessment";
+			};
+			name = Release;
+		};
+		57B8293823E4720E0058163E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDDJKS56T5;
+				INFOPLIST_FILE = QontoAssessmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nouvellet.victor.QontoAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QontoAssessment;
+			};
+			name = Debug;
+		};
+		57B8293923E4720E0058163E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDDJKS56T5;
+				INFOPLIST_FILE = QontoAssessmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nouvellet.victor.QontoAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QontoAssessment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57B8290223E4720B0058163E /* Build configuration list for PBXProject "QontoAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57B8292F23E4720E0058163E /* Debug */,
+				57B8293023E4720E0058163E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57B8293123E4720E0058163E /* Build configuration list for PBXNativeTarget "QontoAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57B8293223E4720E0058163E /* Debug */,
+				57B8293323E4720E0058163E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57B8293423E4720E0058163E /* Build configuration list for PBXNativeTarget "QontoAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57B8293523E4720E0058163E /* Debug */,
+				57B8293623E4720E0058163E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57B8293723E4720E0058163E /* Build configuration list for PBXNativeTarget "QontoAssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57B8293823E4720E0058163E /* Debug */,
+				57B8293923E4720E0058163E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57B828FF23E4720B0058163E /* Project object */;
+}
