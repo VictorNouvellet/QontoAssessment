@@ -24,7 +24,7 @@ class RandomAPIClient {
             "page": page,
             "seed": seed,
             "results": 10,
-            "inc": ["id","name","email"].joined(separator: ",")
+            "inc": ["id","name","email","login"].joined(separator: ",")
         ]
         components?.queryItems = parameters
             .mapValues { String(describing: $0).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) }
